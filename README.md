@@ -6,6 +6,8 @@ Link `i3/` to `~/.config/i3`
 
 Link `vimrc` to `~/.vimrc`
 
+Link `zshrc` to `~/.zshrc`
+
 Link `vim` to `~/.vim`
 
 Link `Xresources` to `~/.Xresources`
