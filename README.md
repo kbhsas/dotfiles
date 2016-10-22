@@ -5,3 +5,4 @@ I will be writing an installation script soon.
 Link `i3/` to `~/.config/i3`
 Link `vimrc` to `~/.vimrc`
 Link `vim` to `~/.vim`
+Link `Xresources` to `~/.Xresources`
