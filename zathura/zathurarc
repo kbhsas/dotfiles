@@ -1,0 +1,8 @@
+set adjust-open best-fit
+set window-height 10000
+map [fullscreen] <A-Return> toggle_fullscreen 
+map [normal] <A-Return> toggle_fullscreen 
+map [fullscreen] <C-i> zoom in
+map [fullscreen] <C-o> zoom out
+map  <C-i> zoom in
+map  <C-o> zoom out
