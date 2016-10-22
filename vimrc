@@ -18,7 +18,7 @@ set encoding=utf-8
 set backspace=indent,eol,start
 set ts=2 sts=2 sw=2 expandtab
 set noswapfile
-"set visualbell
+set visualbell
 set cursorline
 
 set showmatch
