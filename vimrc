@@ -47,3 +47,4 @@ filetype indent on
 let g:tex_flavor='latex'
 autocmd FileType tex set fdm=marker 
 autocmd FileType tex set foldmarker={{{,}}} 
+set clipboard=unnamed
