@@ -69,15 +69,16 @@ RPROMPT='%~%{$fg[yellow]%}$(git_branch)%{$reset_color%}$(git_status)'
 PROMPT="%{$fg[yellow]%}→ %{$reset_color%}"
 TERM="screen-256color"
 
-alias be="bundle exec"
-alias g=git
-alias hub=git-hub
+#alias be="bundle exec"
+#alias g=git
+#alias hub=git-hub
 alias ls='ls --color=auto'
-alias r="bundle exec rails"
-alias rspec="clear; rspec"
-alias t=todo.sh
+#alias r="bundle exec rails"
+#alias rspec="clear; rspec"
+#alias t=todo.sh
 alias v=vim
-alias e="emacs -nw"
+#alias e="emacs -nw"
+alias youdown="~/Documents/scripts/youdown.sh"
 
 show_tasks
 
