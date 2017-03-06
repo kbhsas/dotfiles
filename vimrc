@@ -8,6 +8,7 @@ filetype plugin on
 
 
 syntax on
+set relativenumber
 set number
 set incsearch
 set ignorecase

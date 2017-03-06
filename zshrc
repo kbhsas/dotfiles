@@ -20,33 +20,33 @@ autoload -Uz compinit && compinit
 autoload -Uz colors && colors
 setopt PROMPT_SUBST
 
-#function git_status() {
-#  local st="$(git status 2> /dev/null)"
-#  local ret=""
-#  local color="green"
-#
-#  if [[ $st == *Untracked* ]] then
-#    ret="${ret} @"
-#    color="magenta"
-#  fi
-#
-#  if [[ $st == *"not staged for commit"* ]] then
-#    ret="${ret} ?"
-#    color="red"
-#  fi
-#
-#  if [[ $st == *"to be committed"* ]] then
-#    ret="${ret} !"
-#    color="yellow"
-#  fi
-#
-#  if [[ $st == *clean* ]] then
-#    ret="${ret} \u2713"
-#    color="green"
-#  fi
-#
-#  echo "%{$fg[$color]%}$ret%{$reset_color%}"
-#}
+function git_status() {
+  local st="$(git status 2> /dev/null)"
+  local ret=""
+  local color="green"
+
+  if [[ $st == *Untracked* ]] then
+    ret="${ret} @"
+    color="magenta"
+  fi
+
+  if [[ $st == *"not staged for commit"* ]] then
+    ret="${ret} ?"
+    color="red"
+  fi
+
+  if [[ $st == *"to be committed"* ]] then
+    ret="${ret} !"
+    color="yellow"
+  fi
+
+  if [[ $st == *clean* ]] then
+    ret="${ret} \u2713"
+    color="green"
+  fi
+
+  echo "%{$fg[$color]%}$ret%{$reset_color%}"
+}
 
 function git_branch() {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -74,7 +74,7 @@ TERM="screen-256color"
 #alias be="bundle exec"
 #alias g=git
 #alias hub=git-hub
-#alias ls='ls --color=auto'
+alias ls='ls --color=auto'
 #alias r="bundle exec rails"
 #alias rspec="clear; rspec"
 #alias t=todo.sh
@@ -87,8 +87,8 @@ alias texmux="tmux new -s mango"
 alias bibcompile="pdflatex MAINDOCUMENT.tex && bibtex MAINDOCUMENT && pdflatex MAINDOCUMENT.tex"
 
 #show_tasks
-
-
+fortune hitchhiker | cowsay | lolcat
+#cowsay "All of time and space; everywhere and anywhere; every star that ever was. Where do you want to start?" | lolcat
 #PATH="/usr/local/heroku/bin:$PATH"
 
 
