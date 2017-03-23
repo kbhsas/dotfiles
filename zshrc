@@ -10,10 +10,11 @@ unsetopt hist_beep
 bindkey -v
 
 #export PATH=$PATH:/usr/local/sbin:$HOME/.rvm/bin:$HOME/bin
+#export ZSH=~/.oh-my-zsh
 export LANG=en_US.UTF-8
 export EDITOR=vim
 
-zstyle :compinstall filename '/home/jose/.zshrc'
+zstyle :compinstall filename '/home/kbhsas/.zshrc'
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 autoload -Uz compinit && compinit
@@ -67,10 +68,11 @@ function git_branch() {
 #  todo.sh list 2>/dev/null
 #}
 #
+#ZSH_THEME='minimalparty'
 RPROMPT='%~%{$fg[yellow]%}$(git_branch)%{$reset_color%}$(git_status)'
 PROMPT="%{$fg[yellow]%}→ %{$reset_color%}"
-TERM="screen-256color"
-
+#TERM="screen-256color"
+export TERM=rxvt-unicode-256color
 #alias be="bundle exec"
 #alias g=git
 #alias hub=git-hub
@@ -85,6 +87,7 @@ alias showme="zathura MAINDOCUMENT.pdf"
 alias compile="pdflatex MAINDOCUMENT.tex"
 alias texmux="tmux new -s mango"
 alias bibcompile="pdflatex MAINDOCUMENT.tex && bibtex MAINDOCUMENT && pdflatex MAINDOCUMENT.tex"
+alias files='nautilus .'
 
 #show_tasks
 fortune hitchhiker | cowsay | lolcat
