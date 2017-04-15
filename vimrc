@@ -30,7 +30,10 @@ set winminheight=5
 set winheight=999
 
 set bg=dark
-colorscheme gruvbox
+set bg=light
+"colorscheme gruvbox
+colo seoul256
+let g:seoul256_background = 236
 
 
 

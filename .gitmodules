@@ -28,3 +28,6 @@
 [submodule "vim/bundle/limelight.vim"]
 	path = vim/bundle/limelight.vim
 	url = https://github.com/junegunn/limelight.vim.git
+[submodule "vim/bundle/seol256.vim"]
+	path = vim/bundle/seol256.vim
+	url = https://github.com/junegunn/seoul256.vim.git
