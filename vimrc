@@ -49,4 +49,9 @@ let g:tex_flavor='latex'
 autocmd FileType tex set fdm=marker 
 autocmd FileType tex set foldmarker={{{,}}} 
 set clipboard=unnamed
+" to fix background rendering issue in tmux
 set t_ut=
+
+" Limelight
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
