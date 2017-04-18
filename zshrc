@@ -90,7 +90,6 @@ alias bibcompile="pdflatex MAINDOCUMENT.tex && bibtex MAINDOCUMENT && pdflatex M
 alias files='nautilus .'
 
 #show_tasks
-fortune hitchhiker | cowsay | lolcat
 #cowsay "All of time and space; everywhere and anywhere; every star that ever was. Where do you want to start?" | lolcat
 #PATH="/usr/local/heroku/bin:$PATH"
 
@@ -99,3 +98,5 @@ fortune hitchhiker | cowsay | lolcat
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+fortune hitchhiker | cowsay | lolcat # must be after the rbenv variables if lolcat is installed as a gem 
