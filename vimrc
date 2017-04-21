@@ -58,3 +58,5 @@ set t_ut=
 " Limelight
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
+
+so ~/.dotfiles/vim/vimlatex-overrules.vim
