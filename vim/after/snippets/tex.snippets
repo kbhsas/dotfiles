@@ -15,3 +15,16 @@ snippet tfld
 	{{{
 	${1}
 	}}}
+snippet vec
+	\\vec{${1}} ${0}
+snippet \[
+	\\[ ${1} \\]${0}
+snippet onhand
+	\\only<article>{${1}}${0}
+snippet onpres
+	\\only<presentation>{${1}}${0}
+snippet frame
+	\\begin{frame}[${1:options}]{\\only<presentation>{${2:frame title}}}
+		${3:frame content}
+	\\end{frame}
+	${0}
