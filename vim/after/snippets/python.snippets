@@ -1,0 +1,15 @@
+snippet #!
+	#!/usr/bin/env python3
+	# -*- coding: utf-8 -*-
+snippet docs
+	"""
+	File: ${1:`vim_snippets#Filename('$1.py', 'foo.py')`}
+	Author: `g:snips_author`
+	Email: `g:snips_email`
+	Github: `g:snips_github`
+	Description: ${0}
+	"""
+snippet ifmain
+	${1}
+	if(__name__=="__main__"):
+		main()

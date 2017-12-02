@@ -11,6 +11,7 @@ bindkey -v
 
 #export PATH=$PATH:/usr/local/sbin:$HOME/.rvm/bin:$HOME/bin
 #export ZSH=~/.oh-my-zsh
+export PATH=$PATH:/usr/local/sbin:$HOME/.local/bin
 export LANG=en_US.UTF-8
 export EDITOR=vim
 
@@ -88,6 +89,8 @@ alias compile="pdflatex MAINDOCUMENT.tex"
 alias texmux="tmux new -s mango"
 alias bibcompile="pdflatex MAINDOCUMENT.tex && bibtex MAINDOCUMENT && pdflatex MAINDOCUMENT.tex"
 alias files='nautilus .'
+alias compose="setxkbmap -option compose:caps"
+alias py="python3"
 
 #show_tasks
 #cowsay "All of time and space; everywhere and anywhere; every star that ever was. Where do you want to start?" | lolcat
