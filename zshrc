@@ -4,6 +4,7 @@
 HISTFILE=~/.zsh-histfile
 HISTSIZE=1000
 SAVEHIST=1000
+set -o vi
 unsetopt beep
 unsetopt list_beep
 unsetopt hist_beep
@@ -72,8 +73,8 @@ function git_branch() {
 #ZSH_THEME='minimalparty'
 RPROMPT='%~%{$fg[yellow]%}$(git_branch)%{$reset_color%}$(git_status)'
 PROMPT="%{$fg[yellow]%}→ %{$reset_color%}"
-#TERM="screen-256color"
-export TERM=rxvt-unicode-256color
+TERM="screen-256color"
+#export TERM=rxvt-unicode-256color
 #alias be="bundle exec"
 #alias g=git
 #alias hub=git-hub
@@ -101,5 +102,15 @@ alias py="python3"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+##############  Functions  ##################
+encrypt(){
+  if [ -z $2 ]; then
+    gpg -c --cipher-algo AES256 $1
+  else
+    gpg -o $2 -c --cipher-algo AES256 $1
+  fi
+}
 
-fortune hitchhiker | cowsay | lolcat # must be after the rbenv variables if lolcat is installed as a gem 
+#fortune hitchhiker | cowsay | lolcat # must be after the rbenv variables if lolcat is installed as a gem 
+#echo "So... all of time and space, everything that ever happened or ever will - where do you want to start?" | cowsay |  lolcat
+#echo "There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable. There is another theory which states that this has already happened." | cowsay | lolcat

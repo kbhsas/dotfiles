@@ -7,4 +7,7 @@ map [fullscreen] <C-o> zoom out
 map  <C-i> zoom in
 map  <C-o> zoom out
 
-set selection-clipboard clipboard
+#set selection-clipboard clipboard
+#set recolor true
+#set recolor-darkcolor "#dcdccc"
+#set recolor-lightcolor "#1f1f1f"
