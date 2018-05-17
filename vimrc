@@ -30,9 +30,11 @@ set winminheight=5
 set winheight=999
 
 set bg=dark
-set bg=light
-"colorscheme gruvbox
-colo seoul256
+"set bg=light
+colorscheme gruvbox
+"let g:solarized_termcolors=256
+"colorscheme solarized
+"colo seoul256
 let g:seoul256_background = 236
 
 
@@ -54,6 +56,8 @@ autocmd FileType tex set foldmarker={{{,}}}
 set clipboard=unnamed
 " to fix background rendering issue in tmux
 set t_ut=
+
+autocmd FileType python nnoremap <buffer> <F5> :VimuxRunCommand("clear; python3 ". bufname("%"))<CR>
 
 " Limelight
 let g:limelight_conceal_ctermfg = 'gray'
