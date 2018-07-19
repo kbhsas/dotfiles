@@ -17,10 +17,11 @@ set autoindent
 set fileencoding=utf-8
 set encoding=utf-8
 set backspace=indent,eol,start
-set ts=2 sts=2 sw=2 expandtab
+set ts=2 sts=2 sw=2 "expandtab
 set noswapfile
 set cursorline
 set spelllang=en_us,de_de
+set scrolloff=3
 
 set showmatch
 
@@ -31,11 +32,14 @@ set winheight=999
 
 set bg=dark
 "set bg=light
+
 colorscheme gruvbox
+"colorscheme plain
 "let g:solarized_termcolors=256
+"colorscheme stellarized_light
 "colorscheme solarized
-"colo seoul256
-let g:seoul256_background = 236
+"colorscheme seoul256-light
+"let g:seoul256_background = 236
 
 
 
@@ -58,6 +62,8 @@ set clipboard=unnamed
 set t_ut=
 
 autocmd FileType python nnoremap <buffer> <F5> :VimuxRunCommand("clear; python3 ". bufname("%"))<CR>
+autocmd FileType python nnoremap <buffer> <F3> ^i#<Esc>
+autocmd FileType python nnoremap <buffer> <F4> ^x
 
 " Limelight
 let g:limelight_conceal_ctermfg = 'gray'

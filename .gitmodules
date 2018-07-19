@@ -49,3 +49,12 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/blue-mood"]
+	path = vim/bundle/blue-mood
+	url = https://github.com/lmintmate/blue-mood-vim.git
+[submodule "vim/bundle/stellarized"]
+	path = vim/bundle/stellarized
+	url = https://github.com/nightsense/stellarized.git
+[submodule "vim/bundle/vim-colors-plain"]
+	path = vim/bundle/vim-colors-plain
+	url = https://github.com/NerdyPepper/vim-colors-plain.git

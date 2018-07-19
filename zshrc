@@ -15,6 +15,7 @@ bindkey -v
 export PATH=$PATH:/usr/local/sbin:$HOME/.local/bin
 export LANG=en_US.UTF-8
 export EDITOR=vim
+#export LD_PRELOAD=libcurl.so.3
 
 zstyle :compinstall filename '/home/kbhsas/.zshrc'
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
@@ -73,8 +74,6 @@ function git_branch() {
 #ZSH_THEME='minimalparty'
 RPROMPT='%~%{$fg[yellow]%}$(git_branch)%{$reset_color%}$(git_status)'
 PROMPT="%{$fg[yellow]%}→ %{$reset_color%}"
-TERM="screen-256color"
-#export TERM=rxvt-unicode-256color
 #alias be="bundle exec"
 #alias g=git
 #alias hub=git-hub
@@ -114,3 +113,7 @@ encrypt(){
 #fortune hitchhiker | cowsay | lolcat # must be after the rbenv variables if lolcat is installed as a gem 
 #echo "So... all of time and space, everything that ever happened or ever will - where do you want to start?" | cowsay |  lolcat
 #echo "There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable. There is another theory which states that this has already happened." | cowsay | lolcat
+#TERM=xterm-256color
+#TERM=rxvt-unicode-256color
+TERM=screen-256color
+#TERM=xterm+256colors
